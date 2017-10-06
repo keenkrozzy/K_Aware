@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.DirectoryServices;
+using System.Windows.Forms;
 
 namespace K_Aware
 {
@@ -38,6 +39,8 @@ namespace K_Aware
                     }
                 }
             }
+
+			MessageBox.Show(computerNames.Count().ToString());
 
             return computerNames;
         }
